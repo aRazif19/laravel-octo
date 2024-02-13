@@ -1,0 +1,167 @@
+{
+    "info": {
+        "_postman_id": "318222ea-f0b4-4a01-8805-feb6874484ed",
+        "name": "Movie API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "32732678"
+    },
+    "item": [
+        {
+            "name": "Movie Genre",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/genre?genre=comedy",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "genre"
+                    ],
+                    "query": [
+                        {
+                            "key": "genre",
+                            "value": "comedy"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Movie Performer",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/search_performer?performer_name=Al%20Pacino",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "search_performer"
+                    ],
+                    "query": [
+                        {
+                            "key": "performer_name",
+                            "value": "Al%20Pacino"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Timeslot",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/timeslot?theater_name=abc%20movies&show_start=2020-04-04%2000:00:00&show_end=2020-04-05%2000:00:00\n",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "timeslot"
+                    ],
+                    "query": [
+                        {
+                            "key": "theater_name",
+                            "value": "abc%20movies"
+                        },
+                        {
+                            "key": "show_start",
+                            "value": "2020-04-04%2000:00:00"
+                        },
+                        {
+                            "key": "show_end",
+                            "value": "2020-04-05%2000:00:00\n"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Specific Movie Theater",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/specific_movie_theater?theater_name=abc%20movies&date=2020-04-04\n",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "specific_movie_theater"
+                    ],
+                    "query": [
+                        {
+                            "key": "theater_name",
+                            "value": "abc%20movies"
+                        },
+                        {
+                            "key": "date",
+                            "value": "2020-04-04\n"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "New Movie Release",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/new_movies?release_date=2020-01-01",
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "new_movies"
+                    ],
+                    "query": [
+                        {
+                            "key": "release_date",
+                            "value": "2020-01-01"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
